@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Roboto&display=swap');
+:root{
+    --column: 2;
+    --poems_width: 500px; 
+}
+
+
+
+.poems__container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(var(--column),var(--poems_width));
+    grid-gap: 50px;
+}
+
+.poems{
+    padding: 30px;
+    width: var(--poems_width);
+    margin-bottom: 40px;
+    white-space: pre;
+    border: 0.2px solid gray;
+    border-radius: 10px;
+    font-family: 'Corinthia', "cursive";
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1440px){
+    :root{
+        --column: 1;
+        --poems_width: 500px; 
+    }
+
+}
+
+@media (max-width: 520px){
+    :root{
+        --column: 1;
+        --poems_width: 400px; 
+    }
+    .poems__container{
+        grid-gap: 10px;
+    }
+    .poems{
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 10px;
+        padding-bottom: 20px;
+        margin-bottom: 10px; 
+    }
+
+}
+@media (max-width: 380px){
+    :root{
+        --column: 1;
+        --poems_width: 350px; 
+    }
+    .poems__container{
+        grid-gap: 10px;
+    }
+    .poems{
+        font-size: 13px;
+        padding: 0px 0px 10px 0px;
+    }
+
+}

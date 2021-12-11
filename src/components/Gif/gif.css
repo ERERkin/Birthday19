@@ -1,0 +1,59 @@
+.gif__container{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 30px;
+    justify-content: center;
+}
+.gif{
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+}
+
+@media (min-width: 1440px){
+    .gif__container{
+        grid-template-columns: repeat(3, 400px);
+    }
+    .gif{
+        width: 400px;
+        height: 400px;
+        
+    }
+}
+
+@media (max-width: 1440px){
+    .gif__container{
+        grid-template-columns: repeat(2, 400px);
+    }
+    .gif{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media (max-width: 1000px){
+    .gif__container{
+        grid-template-columns: repeat(2, 300px);
+    }
+    .gif{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width: 770px){
+    .gif__container{
+        grid-template-columns: repeat(2, 200px);
+    }
+    .gif{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 425px){
+    .gif__container{
+        grid-template-columns: repeat(1, 220px);
+    }
+    .gif{
+        width: 220px;
+        height: 200px;
+    }
+}

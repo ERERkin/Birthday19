@@ -1,0 +1,20 @@
+.home__text{
+    margin-bottom: 50px;
+}
+.home__img{
+    border-radius: 10px;
+}
+
+@media (max-width: 780px){
+    .home__img{
+        width: 400px;
+    } 
+}
+@media (max-width: 470px){
+    .home__text{
+        font-size: 22px;
+    }
+    .home__img{
+        width: 300px;
+    } 
+}
